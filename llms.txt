@@ -1,0 +1,27 @@
+# WM DORA ICT Register & Supplier Portal
+
+> WordPress plugin that keeps a list of ICT third-party service providers and contracts with a validated LEI (ISO 17442), country, annual spend and a critical or important function (CIF) marking, and exports the tables (`wm_dora_suppliers`, `wm_dora_contracts`, `wm_dora_subcontractors`) as RFC 4180 CSV with a JSON manifest.
+
+## Overview
+
+`wm-dora-ict-register` is a WordPress plugin developed with an agentic workflow (AI coding agents). It stores ICT third-party providers and contracts through `RegisterRepository`, checks LEI check digits via `Validator::lei()`, supports optional CIF heuristic scoring over REST, and registers as a spoke of the WM Suite Hub when the hub is active. It does not produce the register templates of Commission Implementing Regulation (EU) 2024/2956 or an xBRL-CSV report, provides no subcontractor input UI/route, and makes no legal assessment under DORA.
+
+- REST: `wm-dora/v1` for administrators (`manage_options`), including `GET /wp-json/wm-dora/v1/export/csv`
+- WP-CLI: `wp dora list`, `wp dora export-csv`, `wp dora cif-audit`
+- Block Bindings & GenerateBlocks: `wm-dora/metrics` (WP 6.5+) and `{{wm_dora_metric}}` (GenerateBlocks 2.x)
+- Developer hooks: `wm_dora_ready` action; `wm_dora_export_download_body` and `wm_dora_supplier_row` filters
+- Uninstall: preserves tables and settings by default unless `wm_dora_delete_data_on_uninstall` is enabled
+- Version 1.2.2.
+
+## Standards
+
+- PHP 8.2+ with strict types; WordPress 6.4+
+- Zero-CDN (all admin stylesheets ship locally with the plugin)
+- Prepared SQL queries, late output escaping, RFC 4180 CSV formula neutralisation (`=`, `+`, `-`, `@`)
+- Standalone SQLite/mock test suite with mutation testing, PHPUnit suite, and POT freshness check
+
+## Official Links
+
+- Plugin Page: https://arnoldwender.com/wordpress-plugins/wm-dora-ict-register/
+- GitHub Repository: https://github.com/arnoldwender/wm-wp-dora-ict-register
+- Support & Liability: Zero support — reproducible bugs on https://github.com/arnoldwender/wm-wp-dora-ict-register/issues only · no private support · AS IS / no liability (SUPPORT.md)

@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-version: ['8.2', '8.3']
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          extensions: mbstring, json
+          tools: phpunit
+
+      - name: Run PHPUnit Tests
+        run: |
+          cd tests
+          phpunit --configuration phpunit.xml.dist
+
+      # Until 2026-09-15 CI ran only PHPUnit; the standalone suites never ran here.
+      - name: Run Standalone Test Suites
+        run: |
+          php tests/test-suite.php
+
+      # `wp i18n make-pot` IS the definition of a fresh catalog in the step below, so wp-cli is a
+      # hard requirement there rather than something it shrugs off. Into $HOME/bin, not the
+      # workspace: an executable in the repo root would land in the copy the mutation runner makes.
+      # No workflow input reaches these commands; the URL is a literal.
+      - name: Install WP-CLI
+        if: matrix.php-version == '8.3'
+        run: |
+          mkdir -p "$HOME/bin"
+          curl -sSL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o "$HOME/bin/wp"
+          chmod +x "$HOME/bin/wp"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+
+      # On 2026-09-20 the catalog and the code shared not one entry: all 96 strings missing, and the
+      # 217 translated entries belonged to the Spanish screen the plugin no longer has.
+      - name: Translation catalog freshness
+        if: matrix.php-version == '8.3'
+        run: php tests/test-pot-freshness.php
+
+      # Each entry in tests/mutations.php undoes one fix in a copy; the suite must turn red for every one.
+      - name: Compliance & Security Audit
+        if: matrix.php-version == '8.3'
+        run: python3 .github/scripts/security-audit.py
+
+      - name: Mutation check
+        if: matrix.php-version == '8.3'
+        run: bash tests/run-mutations.sh

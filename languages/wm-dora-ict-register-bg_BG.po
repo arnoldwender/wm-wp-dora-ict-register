@@ -1,0 +1,554 @@
+# Translation of wm-dora-ict-register in bg_BG
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-dora-ict-register 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-dora-ict-"
+"register\n"
+"POT-Creation-Date: 2026-11-21T13:09:51+00:00\n"
+"PO-Revision-Date: 2026-11-21 14:09+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-dora-ict-"
+"register/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-dora-ict-"
+"register/issues>\n"
+"Language: bg_BG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-dora-ict-register\n"
+
+#. Plugin Name of the plugin
+#: wm-dora-ict-register.php
+msgid "WM DORA ICT Register & Supplier Portal"
+msgstr "WM DORA ИКТ регистър и портал за доставчици"
+
+#. Plugin URI of the plugin
+#: wm-dora-ict-register.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-dora-ict-register/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-dora-ict-register/"
+
+#. Description of the plugin
+#: wm-dora-ict-register.php
+msgid ""
+"List of ICT third-party service providers and contracts with validated LEI, "
+"a CIF marking and a CSV export of the plugin tables. Not the register "
+"templates of Implementing Regulation (EU) 2024/2956 and not an xBRL-CSV "
+"report."
+msgstr ""
+"Списък на трети страни доставчици на ИКТ услуги и договори с валидиран LEI, "
+"маркиране за CIF и CSV експорт на таблиците на разширението. Не генерира "
+"образците от Регламент за изпълнение (ЕС) 2024/2956 и не е xBRL-CSV отчет."
+
+#. Author of the plugin
+#: wm-dora-ict-register.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-dora-ict-register.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:48 includes/Admin/AdminDashboard.php:383
+msgid "DORA: IKT-Dienstleister und Verträge"
+msgstr "DORA: Доставчици на ИКТ услуги и договори"
+
+#: includes/Admin/AdminDashboard.php:59
+msgid "Register eingerichtet"
+msgstr "Регистърът е настроен"
+
+#: includes/Admin/AdminDashboard.php:65 includes/Admin/AdminDashboard.php:448
+#: includes/Admin/AdminDashboard.php:475 includes/Admin/AdminDashboard.php:580
+msgid "Dienstleister"
+msgstr "Доставчици"
+
+#: includes/Admin/AdminDashboard.php:69 includes/Admin/AdminDashboard.php:452
+#: includes/Admin/AdminDashboard.php:466 includes/Admin/AdminDashboard.php:581
+msgid "Verträge"
+msgstr "Договори"
+
+#: includes/Admin/AdminDashboard.php:73 includes/Admin/AdminDashboard.php:456
+msgid "als CIF markiert"
+msgstr "маркирани като CIF"
+
+#: includes/Admin/AdminDashboard.php:77
+msgid "Register öffnen"
+msgstr "Отваряне на регистъра"
+
+#: includes/Admin/AdminDashboard.php:86
+msgid "Tabellen fehlen: Plugin deaktivieren und wieder aktivieren"
+msgstr "Липсват таблици: деактивирайте и активирайте отново разширението"
+
+#: includes/Admin/AdminDashboard.php:89
+msgid "LEI des eigenen Unternehmens fehlt"
+msgstr "Липсва LEI на собственото дружество"
+
+#. translators: %d: number of contracts whose supplier row is missing
+#: includes/Admin/AdminDashboard.php:93
+#, php-format
+msgid "%d Verträge ohne Dienstleister-Datensatz"
+msgstr "%d договора без запис за доставчик"
+
+#: includes/Admin/AdminDashboard.php:113
+msgid "DORA Register"
+msgstr "DORA регистър"
+
+#: includes/Admin/AdminDashboard.php:114
+msgid "DORA IKT-Register"
+msgstr "DORA ИКТ регистър"
+
+#: includes/Admin/AdminDashboard.php:314
+msgid "Keine Berechtigung."
+msgstr "Нямате права за достъп."
+
+#: includes/Admin/AdminDashboard.php:319
+msgid "Unbekannte Datei."
+msgstr "Непознат файл."
+
+#: includes/Admin/AdminDashboard.php:336
+msgid "LEI des Dienstleisters (20 Zeichen mit gültigen Prüfziffern)"
+msgstr "LEI на доставчика (20 знака с валидни контролни цифри)"
+
+#: includes/Admin/AdminDashboard.php:337 includes/Admin/AdminDashboard.php:529
+msgid "Name des Dienstleisters"
+msgstr "Наименование на доставчика"
+
+#: includes/Admin/AdminDashboard.php:338
+msgid "Land des Dienstleisters (zwei Buchstaben)"
+msgstr "Държава на доставчика (две букви)"
+
+#: includes/Admin/AdminDashboard.php:339
+msgid "Mutterunternehmen ja/nein"
+msgstr "Предприятие майка да/не"
+
+#: includes/Admin/AdminDashboard.php:340
+msgid "ISO 27001 ja/nein"
+msgstr "ISO 27001 да/не"
+
+#: includes/Admin/AdminDashboard.php:341
+msgid "ISO 27001 gültig bis"
+msgstr "ISO 27001 валиден до"
+
+#: includes/Admin/AdminDashboard.php:342
+msgid "Vertragsreferenz"
+msgstr "Референция на договора"
+
+#: includes/Admin/AdminDashboard.php:343
+msgid "Vertragsreferenz schon vergeben"
+msgstr "Референцията на договора вече се използва"
+
+#: includes/Admin/AdminDashboard.php:344 includes/Admin/AdminDashboard.php:477
+#: includes/Admin/AdminDashboard.php:553
+msgid "Art des Dienstes"
+msgstr "Вид на услугата"
+
+#: includes/Admin/AdminDashboard.php:345 includes/Admin/AdminDashboard.php:562
+msgid "Ort der Datenverarbeitung (zwei Buchstaben)"
+msgstr "Място на обработване на данните (две букви)"
+
+#: includes/Admin/AdminDashboard.php:346
+msgid "Unterauftragsvergabe ja/nein"
+msgstr "Подизпълнение разрешено да/не"
+
+#: includes/Admin/AdminDashboard.php:347
+msgid "Jährliche Kosten (nicht negativ)"
+msgstr "Годишни разходи (неотрицателни)"
+
+#: includes/Admin/AdminDashboard.php:348
+msgid "Kritische oder wichtige Funktion ja/nein"
+msgstr "Критична или важна функция да/не"
+
+#: includes/Admin/AdminDashboard.php:349
+msgid "LEI des eigenen Unternehmens"
+msgstr "LEI на собственото дружество"
+
+#: includes/Admin/AdminDashboard.php:350
+msgid "Tabellen fehlen"
+msgstr "Липсват таблици"
+
+#: includes/Admin/AdminDashboard.php:351
+msgid "Speichern in der Datenbank fehlgeschlagen"
+msgstr "Неуспешно записване в базата данни"
+
+#: includes/Admin/AdminDashboard.php:364
+msgid "Register"
+msgstr "Регистър"
+
+#: includes/Admin/AdminDashboard.php:365
+msgid "Eintragen"
+msgstr "Добавяне"
+
+#: includes/Admin/AdminDashboard.php:366
+msgid "CSV-Export"
+msgstr "CSV експорт"
+
+#: includes/Admin/AdminDashboard.php:367
+msgid "Unternehmen"
+msgstr "Дружество"
+
+#: includes/Admin/AdminDashboard.php:368 includes/Admin/AdminDashboard.php:648
+msgid "Begriffe"
+msgstr "Понятия"
+
+#: includes/Admin/AdminDashboard.php:384
+msgid ""
+"Dienstleister mit LEI · Verträge mit CIF-Markierung · CSV-Export der Plugin-"
+"Tabellen"
+msgstr ""
+"Доставчици с LEI · Договори с CIF маркировка · CSV експорт на таблиците на "
+"разширението"
+
+#: includes/Admin/AdminDashboard.php:388
+msgid "Part of the WM Suite plugin family"
+msgstr "Част от фамилията разширения на WM Suite"
+
+#: includes/Admin/AdminDashboard.php:390
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:391
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:391
+msgid "Standalone"
+msgstr "Самостоятелен"
+
+#: includes/Admin/AdminDashboard.php:393
+msgid "Eingerichtet"
+msgstr "Настроен"
+
+#: includes/Admin/AdminDashboard.php:398
+msgid "Was dieses Plugin tut"
+msgstr "Какво прави това разширение"
+
+#: includes/Admin/AdminDashboard.php:399
+msgid ""
+"Es führt eine Liste von IKT-Dienstleistern und Verträgen mit geprüfter LEI, "
+"Land, Kosten und der Markierung, ob ein Vertrag eine kritische oder wichtige "
+"Funktion unterstützt, und exportiert die Tabellen als CSV. Es erstellt nicht "
+"das Informationsregister in den Vorlagen der Durchführungsverordnung (EU) "
+"2024/2956, keine xBRL-CSV-Meldung und keine Einstufung, die das Unternehmen "
+"nach Artikel 28 Absatz 4 selbst treffen muss."
+msgstr ""
+"Поддържа списък на доставчици на ИКТ услуги и договори с проверен LEI, "
+"държава, разходи и отбелязване дали договорът поддържа критична или важна "
+"функция, и експортира таблиците като CSV. Не създава регистъра на "
+"информацията по образците на Регламент за изпълнение (ЕС) 2024/2956, xBRL-"
+"CSV отчет или оценката, която субектът трябва сам да извърши съгласно чл. "
+"28, параграф 4."
+
+#: includes/Admin/AdminDashboard.php:401
+msgid "Dienstleister eintragen"
+msgstr "Добавяне на доставчик"
+
+#: includes/Admin/AdminDashboard.php:405
+msgid "Beispieldaten laden (zwei fiktive Dienstleister)"
+msgstr "Зареждане на примерни данни (два фиктивни доставчика)"
+
+#: includes/Admin/AdminDashboard.php:411
+msgid "Dienstleister und Vertrag gespeichert."
+msgstr "Доставчикът и договорът са записани."
+
+#: includes/Admin/AdminDashboard.php:413
+msgid ""
+"Beispieldaten geladen. Sie stehen im Register und im Export; vor echter "
+"Nutzung löschen."
+msgstr ""
+"Примерните данни са заредени. Те присъстват в регистъра и експорта; изтрийте "
+"ги преди реална употреба."
+
+#: includes/Admin/AdminDashboard.php:415
+msgid "Unternehmensangaben gespeichert."
+msgstr "Данните за дружеството са записани."
+
+#: includes/Admin/AdminDashboard.php:418
+msgid "Nichts gespeichert. Bitte prüfen:"
+msgstr "Нищо не е записано. Моля, проверете:"
+
+#: includes/Admin/AdminDashboard.php:421
+msgid "Bereiche"
+msgstr "Раздели"
+
+#: includes/Admin/AdminDashboard.php:460 includes/Admin/AdminDashboard.php:621
+msgid "Zuständige Behörde"
+msgstr "Компетентен орган"
+
+#: includes/Admin/AdminDashboard.php:461
+msgid "nicht angegeben"
+msgstr "не е посочен"
+
+#: includes/Admin/AdminDashboard.php:468
+msgid "Noch keine Verträge eingetragen."
+msgstr "Все още няма въведени договори."
+
+#: includes/Admin/AdminDashboard.php:474
+msgid "Referenz"
+msgstr "Референция"
+
+#: includes/Admin/AdminDashboard.php:476 includes/Admin/AdminDashboard.php:644
+msgid "LEI"
+msgstr "LEI"
+
+#: includes/Admin/AdminDashboard.php:478
+msgid "CIF"
+msgstr "CIF"
+
+#: includes/Admin/AdminDashboard.php:479
+msgid "Kosten pro Jahr (EUR)"
+msgstr "Годишни разходи (EUR)"
+
+#: includes/Admin/AdminDashboard.php:486
+msgid "Datensatz fehlt"
+msgstr "Липсва запис"
+
+#: includes/Admin/AdminDashboard.php:489 includes/Admin/AdminDashboard.php:505
+msgid "ja"
+msgstr "да"
+
+#: includes/Admin/AdminDashboard.php:489 includes/Admin/AdminDashboard.php:506
+msgid "nein"
+msgstr "не"
+
+#: includes/Admin/AdminDashboard.php:513
+msgid "Cloud und Hosting (IaaS/PaaS)"
+msgstr "Облачни услуги и хостинг (IaaS/PaaS)"
+
+#: includes/Admin/AdminDashboard.php:514
+msgid "Zahlungsabwicklung"
+msgstr "Обработка на плащания"
+
+#: includes/Admin/AdminDashboard.php:515
+msgid "Software als Dienst (SaaS)"
+msgstr "Софтуер като услуга (SaaS)"
+
+#: includes/Admin/AdminDashboard.php:516
+msgid "Sicherheitsdienst / SOC"
+msgstr "Услуга за сигурност / SOC"
+
+#: includes/Admin/AdminDashboard.php:517
+msgid "Datenanalyse"
+msgstr "Анализ на данни"
+
+#: includes/Admin/AdminDashboard.php:518
+msgid "Anderer IKT-Dienst"
+msgstr "Друга ИКТ услуга"
+
+#: includes/Admin/AdminDashboard.php:522
+msgid "Dienstleister und Vertrag eintragen"
+msgstr "Добавяне на доставчик и договор"
+
+#: includes/Admin/AdminDashboard.php:523
+msgid ""
+"Ist die LEI schon eingetragen, wird der vorhandene Dienstleister verwendet "
+"und nur der Vertrag angelegt."
+msgstr ""
+"Ако LEI вече съществува, се използва наличният доставчик и се създава само "
+"договорът."
+
+#: includes/Admin/AdminDashboard.php:533
+msgid "LEI des Dienstleisters"
+msgstr "LEI на доставчика"
+
+#: includes/Admin/AdminDashboard.php:534
+msgid ""
+"20 Zeichen nach ISO 17442; die letzten zwei Ziffern werden geprüft. "
+"Nachschlagen bei gleif.org."
+msgstr ""
+"20 знака по ISO 17442; последните две цифри се проверяват. Справка на "
+"gleif.org."
+
+#: includes/Admin/AdminDashboard.php:538
+msgid "Land des Dienstleisters (ISO 3166-1, zwei Buchstaben)"
+msgstr "Държава на доставчика (ISO 3166-1, две букви)"
+
+#: includes/Admin/AdminDashboard.php:541
+msgid "Ist der Dienstleister ein Mutterunternehmen?"
+msgstr "Предприятие майка ли е доставчикът?"
+
+#: includes/Admin/AdminDashboard.php:542
+msgid "Liegt ein ISO-27001-Zertifikat vor?"
+msgstr "Наличен ли е сертификат ISO 27001?"
+
+#: includes/Admin/AdminDashboard.php:544
+msgid "ISO 27001 gültig bis (optional)"
+msgstr "ISO 27001 валиден до (по избор)"
+
+#: includes/Admin/AdminDashboard.php:549
+msgid "Vertragsreferenz (leer = automatisch)"
+msgstr "Референция на договора (празно = автоматично)"
+
+#: includes/Admin/AdminDashboard.php:555
+msgid "Bitte wählen"
+msgstr "Моля, изберете"
+
+#: includes/Admin/AdminDashboard.php:565
+msgid "Ist die Vergabe an Unterauftragnehmer erlaubt?"
+msgstr "Разрешено ли е възлагане на подизпълнители?"
+
+#: includes/Admin/AdminDashboard.php:567
+msgid "Jährliche Kosten in EUR"
+msgstr "Годишни разходи в EUR"
+
+#: includes/Admin/AdminDashboard.php:570
+msgid ""
+"Unterstützt der Dienst eine kritische oder wichtige Funktion (Einstufung des "
+"Unternehmens)?"
+msgstr ""
+"Поддържа ли услугата критична или важна функция (оценка на дружеството)?"
+
+#: includes/Admin/AdminDashboard.php:572 includes/Admin/AdminDashboard.php:632
+msgid "Speichern"
+msgstr "Запазване"
+
+#: includes/Admin/AdminDashboard.php:582
+msgid "Unterauftragnehmer (leer: noch keine Eingabe möglich)"
+msgstr "Подизпълнители (празно: въвеждането все още не е налично)"
+
+#: includes/Admin/AdminDashboard.php:583
+msgid "Manifest (JSON)"
+msgstr "Манифест (JSON)"
+
+#: includes/Admin/AdminDashboard.php:587
+msgid "CSV-Export der Plugin-Tabellen"
+msgstr "CSV експорт на таблиците на разширението"
+
+#: includes/Admin/AdminDashboard.php:588
+msgid ""
+"Die Dateien enthalten die Spalten dieses Plugins. Sie sind nicht das "
+"Informationsregister in den Vorlagen der Durchführungsverordnung (EU) "
+"2024/2956 (B_01.01 bis B_99.01) und keine xBRL-CSV-Meldung; für eine "
+"Einreichung müssen die Daten in das von der Behörde verlangte Format "
+"übertragen werden."
+msgstr ""
+"Файловете съдържат колоните на това разширение. Те не представляват "
+"регистъра на информацията в образците на Регламент за изпълнение (ЕС) "
+"2024/2956 (B_01.01 до B_99.01) и не са xBRL-CSV подаване; за подаване "
+"данните трябва да се прехвърлят във формата, изискван от органа."
+
+#: includes/Admin/AdminDashboard.php:590
+msgid ""
+"Die LEI des eigenen Unternehmens fehlt; das Manifest enthält dann keine."
+msgstr "Липсва LEI на собственото дружество; манифестът няма да съдържа такъв."
+
+#: includes/Admin/AdminDashboard.php:608
+msgid "Eigenes Unternehmen"
+msgstr "Собствено дружество"
+
+#: includes/Admin/AdminDashboard.php:613
+msgid "LEI des Unternehmens"
+msgstr "LEI на дружеството"
+
+#: includes/Admin/AdminDashboard.php:617
+msgid "Name des Unternehmens"
+msgstr "Наименование на дружеството"
+
+#: includes/Admin/AdminDashboard.php:628
+msgid ""
+"Alle Registerdaten und Einstellungen beim Deinstallieren des Plugins löschen"
+msgstr ""
+"Изтриване на всички данни от регистъра и настройки при деинсталиране на "
+"разширението"
+
+#: includes/Admin/AdminDashboard.php:630
+msgid ""
+"Ohne Auswahl bleiben Dienstleister, Verträge und Unternehmenseinstellungen "
+"erhalten, wenn das Plugin gelöscht wird."
+msgstr ""
+"Без отметка доставчиците, договорите и настройките на дружеството се "
+"запазват при изтриване на разширението."
+
+#: includes/Admin/AdminDashboard.php:640
+msgid "DORA"
+msgstr "DORA"
+
+#: includes/Admin/AdminDashboard.php:640
+msgid ""
+"Verordnung (EU) 2022/2554 über die digitale operationale Resilienz im "
+"Finanzsektor, anwendbar seit dem 17. Januar 2025. Sie gilt für die in "
+"Artikel 2 genannten Finanzunternehmen und für IKT-Drittdienstleister; dieses "
+"Plugin prüft nicht, ob sie für ein Unternehmen gilt."
+msgstr ""
+"Регламент (ЕС) 2022/2554 относно оперативната устойчивост на цифровите "
+"технологии във финансовия сектор, приложим от 17 януари 2025 г. Отнася се за "
+"финансовите субекти по член 2 и третите страни доставчици на ИКТ услуги; "
+"това разширение не проверява приложимостта."
+
+#: includes/Admin/AdminDashboard.php:641
+msgid "Informationsregister (Art. 28 Abs. 3)"
+msgstr "Регистър на информацията (чл. 28, пар. 3)"
+
+#: includes/Admin/AdminDashboard.php:641
+msgid ""
+"Finanzunternehmen führen auf Einzel-, teilkonsolidierter und konsolidierter "
+"Ebene ein Register aller vertraglichen Vereinbarungen über IKT-"
+"Dienstleistungen, berichten mindestens jährlich über neue Vereinbarungen und "
+"stellen das vollständige Register auf Anfrage der Behörde zur Verfügung."
+msgstr ""
+"Финансовите субекти поддържат на индивидуално, подконсолидирано и "
+"консолидирано равнище регистър на всички договорни споразумения за ИКТ "
+"услуги, докладват поне веднъж годишно за новите споразумения и предоставят "
+"пълния регистър на компетентния орган при поискване."
+
+#: includes/Admin/AdminDashboard.php:642
+msgid "Kritische oder wichtige Funktion (Art. 3 Nr. 22)"
+msgstr "Критична или важна функция (чл. 3, т. 22)"
+
+#: includes/Admin/AdminDashboard.php:642
+msgid ""
+"Eine Funktion, deren Störung die finanzielle Leistungsfähigkeit, die "
+"Solidität oder die Fortführung der Dienstleistungen eines Finanzunternehmens "
+"erheblich beeinträchtigen würde oder die Einhaltung seiner "
+"Zulassungsbedingungen und Pflichten. Die Punktzahl dieses Plugins ist eine "
+"eigene Heuristik, keine Vorgabe der Verordnung."
+msgstr ""
+"Функция, чието прекъсване съществено би увредило финансовите резултати, "
+"стабилността или непрекъснатостта на услугите на финансов субект или "
+"спазването на условията за лицензиране. Точките в това разширение са "
+"собствена евристика, а не изискване на регламента."
+
+#: includes/Admin/AdminDashboard.php:643
+msgid "Vorlagen (Durchführungsverordnung (EU) 2024/2956)"
+msgstr "Образци (Регламент за изпълнение (ЕС) 2024/2956)"
+
+#: includes/Admin/AdminDashboard.php:643
+msgid ""
+"Standardvorlagen für das Register, beginnend mit B_01.01 (Unternehmen, das "
+"das Register führt); Dienstleister stehen in B_05.01, die Lieferkette in "
+"B_05.02. Dieses Plugin erzeugt diese Vorlagen nicht."
+msgstr ""
+"Стандартни образци за регистъра, започващи от B_01.01 (субект, поддържащ "
+"регистъра); доставчиците са в B_05.01, а веригата на доставки в B_05.02. "
+"Това разширение не генерира тези образци."
+
+#: includes/Admin/AdminDashboard.php:644
+msgid ""
+"Legal Entity Identifier nach ISO 17442: 20 Zeichen, die letzten beiden sind "
+"Prüfziffern. Öffentlich nachschlagbar bei der GLEIF."
+msgstr ""
+"Идентификатор на правен субект по ISO 17442: 20 знака, последните два са "
+"контролни цифри. Публично проверим в GLEIF."
+
+#: includes/Integrations/EcosystemBridge.php:37
+msgid "DORA IKT-Register Kennzahlen"
+msgstr "Показатели на DORA ИКТ регистър"
+
+#: includes/Integrations/EcosystemBridge.php:51
+msgid "DORA IKT-Register Kennzahl"
+msgstr "Показател на DORA ИКТ регистър"
+
+#: includes/Integrations/EcosystemBridge.php:55
+msgid ""
+"Berechnete Kennzahl aus dem DORA-IKT-Register (suppliers, contracts, "
+"cif_contracts, subcontractors, orphan_contracts, competent_authority, "
+"health_status)."
+msgstr ""
+"Изчислен показател от DORA ИКТ регистъра (suppliers, contracts, "
+"cif_contracts, subcontractors, orphan_contracts, competent_authority, "
+"health_status)."
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

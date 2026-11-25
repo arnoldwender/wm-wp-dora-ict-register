@@ -1,0 +1,557 @@
+# Translation of wm-dora-ict-register in el
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-dora-ict-register 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-dora-ict-"
+"register\n"
+"POT-Creation-Date: 2026-11-21T13:09:51+00:00\n"
+"PO-Revision-Date: 2026-11-21 14:09+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-dora-ict-"
+"register/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-dora-ict-"
+"register/issues>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-dora-ict-register\n"
+
+#. Plugin Name of the plugin
+#: wm-dora-ict-register.php
+msgid "WM DORA ICT Register & Supplier Portal"
+msgstr "WM Μητρώο ΤΠΕ DORA & Πύλη Παρόχων"
+
+#. Plugin URI of the plugin
+#: wm-dora-ict-register.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-dora-ict-register/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-dora-ict-register/"
+
+#. Description of the plugin
+#: wm-dora-ict-register.php
+msgid ""
+"List of ICT third-party service providers and contracts with validated LEI, "
+"a CIF marking and a CSV export of the plugin tables. Not the register "
+"templates of Implementing Regulation (EU) 2024/2956 and not an xBRL-CSV "
+"report."
+msgstr ""
+"Κατάλογος τρίτων παρόχων υπηρεσιών ΤΠΕ και συμβάσεων με επαληθευμένο LEI, "
+"σήμανση CIF και εξαγωγή CSV των πινάκων του προσθέτου. Δεν παράγει τα "
+"υποδείγματα του εκτελεστικού κανονισμού (ΕΕ) 2024/2956 ούτε αναφορά xBRL-CSV."
+
+#. Author of the plugin
+#: wm-dora-ict-register.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-dora-ict-register.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:48 includes/Admin/AdminDashboard.php:383
+msgid "DORA: IKT-Dienstleister und Verträge"
+msgstr "DORA: Πάροχοι υπηρεσιών ΤΠΕ και συμβάσεις"
+
+#: includes/Admin/AdminDashboard.php:59
+msgid "Register eingerichtet"
+msgstr "Το μητρώο έχει ρυθμιστεί"
+
+#: includes/Admin/AdminDashboard.php:65 includes/Admin/AdminDashboard.php:448
+#: includes/Admin/AdminDashboard.php:475 includes/Admin/AdminDashboard.php:580
+msgid "Dienstleister"
+msgstr "Πάροχοι"
+
+#: includes/Admin/AdminDashboard.php:69 includes/Admin/AdminDashboard.php:452
+#: includes/Admin/AdminDashboard.php:466 includes/Admin/AdminDashboard.php:581
+msgid "Verträge"
+msgstr "Συμβάσεις"
+
+#: includes/Admin/AdminDashboard.php:73 includes/Admin/AdminDashboard.php:456
+msgid "als CIF markiert"
+msgstr "με σήμανση CIF"
+
+#: includes/Admin/AdminDashboard.php:77
+msgid "Register öffnen"
+msgstr "Άνοιγμα μητρώου"
+
+#: includes/Admin/AdminDashboard.php:86
+msgid "Tabellen fehlen: Plugin deaktivieren und wieder aktivieren"
+msgstr "Λείπουν πίνακες: απενεργοποιήστε και ενεργοποιήστε ξανά το πρόσθετο"
+
+#: includes/Admin/AdminDashboard.php:89
+msgid "LEI des eigenen Unternehmens fehlt"
+msgstr "Λείπει το LEI της ίδιας της οντότητας"
+
+#. translators: %d: number of contracts whose supplier row is missing
+#: includes/Admin/AdminDashboard.php:93
+#, php-format
+msgid "%d Verträge ohne Dienstleister-Datensatz"
+msgstr "%d συμβάσεις χωρίς εγγραφή παρόχου"
+
+#: includes/Admin/AdminDashboard.php:113
+msgid "DORA Register"
+msgstr "Μητρώο DORA"
+
+#: includes/Admin/AdminDashboard.php:114
+msgid "DORA IKT-Register"
+msgstr "Μητρώο ΤΠΕ DORA"
+
+#: includes/Admin/AdminDashboard.php:314
+msgid "Keine Berechtigung."
+msgstr "Δεν έχετε δικαίωμα πρόσβασης."
+
+#: includes/Admin/AdminDashboard.php:319
+msgid "Unbekannte Datei."
+msgstr "Άγνωστο αρχείο."
+
+#: includes/Admin/AdminDashboard.php:336
+msgid "LEI des Dienstleisters (20 Zeichen mit gültigen Prüfziffern)"
+msgstr "LEI παρόχου (20 χαρακτήρες με έγκυρα ψηφία ελέγχου)"
+
+#: includes/Admin/AdminDashboard.php:337 includes/Admin/AdminDashboard.php:529
+msgid "Name des Dienstleisters"
+msgstr "Επωνυμία παρόχου"
+
+#: includes/Admin/AdminDashboard.php:338
+msgid "Land des Dienstleisters (zwei Buchstaben)"
+msgstr "Χώρα παρόχου (δύο γράμματα)"
+
+#: includes/Admin/AdminDashboard.php:339
+msgid "Mutterunternehmen ja/nein"
+msgstr "Μητρική επιχείρηση ναι/όχι"
+
+#: includes/Admin/AdminDashboard.php:340
+msgid "ISO 27001 ja/nein"
+msgstr "ISO 27001 ναι/όχι"
+
+#: includes/Admin/AdminDashboard.php:341
+msgid "ISO 27001 gültig bis"
+msgstr "ISO 27001 ισχύει έως"
+
+#: includes/Admin/AdminDashboard.php:342
+msgid "Vertragsreferenz"
+msgstr "Κωδικός αναφοράς σύμβασης"
+
+#: includes/Admin/AdminDashboard.php:343
+msgid "Vertragsreferenz schon vergeben"
+msgstr "Ο κωδικός αναφοράς σύμβασης χρησιμοποιείται ήδη"
+
+#: includes/Admin/AdminDashboard.php:344 includes/Admin/AdminDashboard.php:477
+#: includes/Admin/AdminDashboard.php:553
+msgid "Art des Dienstes"
+msgstr "Κατηγορία υπηρεσίας"
+
+#: includes/Admin/AdminDashboard.php:345 includes/Admin/AdminDashboard.php:562
+msgid "Ort der Datenverarbeitung (zwei Buchstaben)"
+msgstr "Τόπος επεξεργασίας δεδομένων (δύο γράμματα)"
+
+#: includes/Admin/AdminDashboard.php:346
+msgid "Unterauftragsvergabe ja/nein"
+msgstr "Επιτρέπεται υπεργολαβία ναι/όχι"
+
+#: includes/Admin/AdminDashboard.php:347
+msgid "Jährliche Kosten (nicht negativ)"
+msgstr "Ετήσιο κόστος (μη αρνητικό)"
+
+#: includes/Admin/AdminDashboard.php:348
+msgid "Kritische oder wichtige Funktion ja/nein"
+msgstr "Κρίσιμη ή σημαντική λειτουργία ναι/όχι"
+
+#: includes/Admin/AdminDashboard.php:349
+msgid "LEI des eigenen Unternehmens"
+msgstr "LEI της ίδιας της οντότητας"
+
+#: includes/Admin/AdminDashboard.php:350
+msgid "Tabellen fehlen"
+msgstr "Λείπουν πίνακες"
+
+#: includes/Admin/AdminDashboard.php:351
+msgid "Speichern in der Datenbank fehlgeschlagen"
+msgstr "Αποτυχία αποθήκευσης στη βάση δεδομένων"
+
+#: includes/Admin/AdminDashboard.php:364
+msgid "Register"
+msgstr "Μητρώο"
+
+#: includes/Admin/AdminDashboard.php:365
+msgid "Eintragen"
+msgstr "Καταχώριση"
+
+#: includes/Admin/AdminDashboard.php:366
+msgid "CSV-Export"
+msgstr "Εξαγωγή CSV"
+
+#: includes/Admin/AdminDashboard.php:367
+msgid "Unternehmen"
+msgstr "Οντότητα"
+
+#: includes/Admin/AdminDashboard.php:368 includes/Admin/AdminDashboard.php:648
+msgid "Begriffe"
+msgstr "Όροι"
+
+#: includes/Admin/AdminDashboard.php:384
+msgid ""
+"Dienstleister mit LEI · Verträge mit CIF-Markierung · CSV-Export der Plugin-"
+"Tabellen"
+msgstr ""
+"Πάροχοι με LEI · Συμβάσεις με σήμανση CIF · Εξαγωγή CSV των πινάκων του "
+"προσθέτου"
+
+#: includes/Admin/AdminDashboard.php:388
+msgid "Part of the WM Suite plugin family"
+msgstr "Μέρος της οικογένειας προσθέτων WM Suite"
+
+#: includes/Admin/AdminDashboard.php:390
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:391
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:391
+msgid "Standalone"
+msgstr "Αυτόνομο"
+
+#: includes/Admin/AdminDashboard.php:393
+msgid "Eingerichtet"
+msgstr "Ρυθμισμένο"
+
+#: includes/Admin/AdminDashboard.php:398
+msgid "Was dieses Plugin tut"
+msgstr "Τι κάνει αυτό το πρόσθετο"
+
+#: includes/Admin/AdminDashboard.php:399
+msgid ""
+"Es führt eine Liste von IKT-Dienstleistern und Verträgen mit geprüfter LEI, "
+"Land, Kosten und der Markierung, ob ein Vertrag eine kritische oder wichtige "
+"Funktion unterstützt, und exportiert die Tabellen als CSV. Es erstellt nicht "
+"das Informationsregister in den Vorlagen der Durchführungsverordnung (EU) "
+"2024/2956, keine xBRL-CSV-Meldung und keine Einstufung, die das Unternehmen "
+"nach Artikel 28 Absatz 4 selbst treffen muss."
+msgstr ""
+"Τηρεί κατάλογο παρόχων ΤΠΕ και συμβάσεων με ελεγμένο LEI, χώρα, κόστος και "
+"ένδειξη αν η σύμβαση υποστηρίζει κρίσιμη ή σημαντική λειτουργία, και εξάγει "
+"τους πίνακες σε CSV. Δεν δημιουργεί το μητρώο πληροφοριών στα υποδείγματα "
+"του εκτελεστικού κανονισμού (ΕΕ) 2024/2956, ούτε υποβολή xBRL-CSV ούτε την "
+"αξιολόγηση που οφείλει να διενεργεί η ίδια η οντότητα βάσει του άρθρου 28 "
+"παρ. 4."
+
+#: includes/Admin/AdminDashboard.php:401
+msgid "Dienstleister eintragen"
+msgstr "Καταχώριση παρόχου"
+
+#: includes/Admin/AdminDashboard.php:405
+msgid "Beispieldaten laden (zwei fiktive Dienstleister)"
+msgstr "Φόρτωση ενδεικτικών δεδομένων (δύο εικονικοί πάροχοι)"
+
+#: includes/Admin/AdminDashboard.php:411
+msgid "Dienstleister und Vertrag gespeichert."
+msgstr "Ο πάροχος και η σύμβαση αποθηκεύτηκαν."
+
+#: includes/Admin/AdminDashboard.php:413
+msgid ""
+"Beispieldaten geladen. Sie stehen im Register und im Export; vor echter "
+"Nutzung löschen."
+msgstr ""
+"Τα ενδεικτικά δεδομένα φορτώθηκαν. Εμφανίζονται στο μητρώο και στην εξαγωγή· "
+"διαγράψτε τα πριν από πραγματική χρήση."
+
+#: includes/Admin/AdminDashboard.php:415
+msgid "Unternehmensangaben gespeichert."
+msgstr "Τα στοιχεία της οντότητας αποθηκεύτηκαν."
+
+#: includes/Admin/AdminDashboard.php:418
+msgid "Nichts gespeichert. Bitte prüfen:"
+msgstr "Δεν αποθηκεύτηκε τίποτα. Ελέγξτε:"
+
+#: includes/Admin/AdminDashboard.php:421
+msgid "Bereiche"
+msgstr "Ενότητες"
+
+#: includes/Admin/AdminDashboard.php:460 includes/Admin/AdminDashboard.php:621
+msgid "Zuständige Behörde"
+msgstr "Αρμόδια αρχή"
+
+#: includes/Admin/AdminDashboard.php:461
+msgid "nicht angegeben"
+msgstr "δεν έχει οριστεί"
+
+#: includes/Admin/AdminDashboard.php:468
+msgid "Noch keine Verträge eingetragen."
+msgstr "Δεν έχουν καταχωριστεί ακόμη συμβάσεις."
+
+#: includes/Admin/AdminDashboard.php:474
+msgid "Referenz"
+msgstr "Αναφορά"
+
+#: includes/Admin/AdminDashboard.php:476 includes/Admin/AdminDashboard.php:644
+msgid "LEI"
+msgstr "LEI"
+
+#: includes/Admin/AdminDashboard.php:478
+msgid "CIF"
+msgstr "CIF"
+
+#: includes/Admin/AdminDashboard.php:479
+msgid "Kosten pro Jahr (EUR)"
+msgstr "Ετήσιο κόστος (EUR)"
+
+#: includes/Admin/AdminDashboard.php:486
+msgid "Datensatz fehlt"
+msgstr "Λείπει εγγραφή"
+
+#: includes/Admin/AdminDashboard.php:489 includes/Admin/AdminDashboard.php:505
+msgid "ja"
+msgstr "ναι"
+
+#: includes/Admin/AdminDashboard.php:489 includes/Admin/AdminDashboard.php:506
+msgid "nein"
+msgstr "όχι"
+
+#: includes/Admin/AdminDashboard.php:513
+msgid "Cloud und Hosting (IaaS/PaaS)"
+msgstr "Υπολογιστικό νέφος και φιλοξενία (IaaS/PaaS)"
+
+#: includes/Admin/AdminDashboard.php:514
+msgid "Zahlungsabwicklung"
+msgstr "Επεξεργασία πληρωμών"
+
+#: includes/Admin/AdminDashboard.php:515
+msgid "Software als Dienst (SaaS)"
+msgstr "Λογισμικό ως υπηρεσία (SaaS)"
+
+#: includes/Admin/AdminDashboard.php:516
+msgid "Sicherheitsdienst / SOC"
+msgstr "Υπηρεσία ασφάλειας / SOC"
+
+#: includes/Admin/AdminDashboard.php:517
+msgid "Datenanalyse"
+msgstr "Ανάλυση δεδομένων"
+
+#: includes/Admin/AdminDashboard.php:518
+msgid "Anderer IKT-Dienst"
+msgstr "Άλλη υπηρεσία ΤΠΕ"
+
+#: includes/Admin/AdminDashboard.php:522
+msgid "Dienstleister und Vertrag eintragen"
+msgstr "Καταχώριση παρόχου και σύμβασης"
+
+#: includes/Admin/AdminDashboard.php:523
+msgid ""
+"Ist die LEI schon eingetragen, wird der vorhandene Dienstleister verwendet "
+"und nur der Vertrag angelegt."
+msgstr ""
+"Εάν το LEI υπάρχει ήδη, χρησιμοποιείται ο υπάρχων πάροχος και δημιουργείται "
+"μόνο η σύμβαση."
+
+#: includes/Admin/AdminDashboard.php:533
+msgid "LEI des Dienstleisters"
+msgstr "LEI παρόχου"
+
+#: includes/Admin/AdminDashboard.php:534
+msgid ""
+"20 Zeichen nach ISO 17442; die letzten zwei Ziffern werden geprüft. "
+"Nachschlagen bei gleif.org."
+msgstr ""
+"20 χαρακτήρες κατά ISO 17442· ελέγχονται τα δύο τελευταία ψηφία. Αναζήτηση "
+"στο gleif.org."
+
+#: includes/Admin/AdminDashboard.php:538
+msgid "Land des Dienstleisters (ISO 3166-1, zwei Buchstaben)"
+msgstr "Χώρα παρόχου (ISO 3166-1, δύο γράμματα)"
+
+#: includes/Admin/AdminDashboard.php:541
+msgid "Ist der Dienstleister ein Mutterunternehmen?"
+msgstr "Είναι ο πάροχος μητρική επιχείρηση;"
+
+#: includes/Admin/AdminDashboard.php:542
+msgid "Liegt ein ISO-27001-Zertifikat vor?"
+msgstr "Υπάρχει πιστοποιητικό ISO 27001;"
+
+#: includes/Admin/AdminDashboard.php:544
+msgid "ISO 27001 gültig bis (optional)"
+msgstr "ISO 27001 ισχύει έως (προαιρετικό)"
+
+#: includes/Admin/AdminDashboard.php:549
+msgid "Vertragsreferenz (leer = automatisch)"
+msgstr "Κωδικός αναφοράς σύμβασης (κενό = αυτόματα)"
+
+#: includes/Admin/AdminDashboard.php:555
+msgid "Bitte wählen"
+msgstr "Επιλέξτε"
+
+#: includes/Admin/AdminDashboard.php:565
+msgid "Ist die Vergabe an Unterauftragnehmer erlaubt?"
+msgstr "Επιτρέπεται η ανάθεση σε υπεργολάβους;"
+
+#: includes/Admin/AdminDashboard.php:567
+msgid "Jährliche Kosten in EUR"
+msgstr "Ετήσιο κόστος σε EUR"
+
+#: includes/Admin/AdminDashboard.php:570
+msgid ""
+"Unterstützt der Dienst eine kritische oder wichtige Funktion (Einstufung des "
+"Unternehmens)?"
+msgstr ""
+"Υποστηρίζει η υπηρεσία κρίσιμη ή σημαντική λειτουργία (αξιολόγηση της "
+"οντότητας);"
+
+#: includes/Admin/AdminDashboard.php:572 includes/Admin/AdminDashboard.php:632
+msgid "Speichern"
+msgstr "Αποθήκευση"
+
+#: includes/Admin/AdminDashboard.php:582
+msgid "Unterauftragnehmer (leer: noch keine Eingabe möglich)"
+msgstr "Υπεργολάβοι (κενό: δεν είναι ακόμη δυνατή η εισαγωγή)"
+
+#: includes/Admin/AdminDashboard.php:583
+msgid "Manifest (JSON)"
+msgstr "Δήλωση Manifest (JSON)"
+
+#: includes/Admin/AdminDashboard.php:587
+msgid "CSV-Export der Plugin-Tabellen"
+msgstr "Εξαγωγή CSV των πινάκων του προσθέτου"
+
+#: includes/Admin/AdminDashboard.php:588
+msgid ""
+"Die Dateien enthalten die Spalten dieses Plugins. Sie sind nicht das "
+"Informationsregister in den Vorlagen der Durchführungsverordnung (EU) "
+"2024/2956 (B_01.01 bis B_99.01) und keine xBRL-CSV-Meldung; für eine "
+"Einreichung müssen die Daten in das von der Behörde verlangte Format "
+"übertragen werden."
+msgstr ""
+"Τα αρχεία περιέχουν τις στήλες αυτού του προσθέτου. Δεν αποτελούν το μητρώο "
+"πληροφοριών στα υποδείγματα του εκτελεστικού κανονισμού (ΕΕ) 2024/2956 "
+"(B_01.01 έως B_99.01) ούτε δήλωση xBRL-CSV· για υποβολή τα δεδομένα πρέπει "
+"να μεταφερθούν στη μορφή που ζητά η αρχή."
+
+#: includes/Admin/AdminDashboard.php:590
+msgid ""
+"Die LEI des eigenen Unternehmens fehlt; das Manifest enthält dann keine."
+msgstr ""
+"Λείπει το LEI της ίδιας της οντότητας· το manifest δεν θα περιέχει LEI."
+
+#: includes/Admin/AdminDashboard.php:608
+msgid "Eigenes Unternehmen"
+msgstr "Δική σας οντότητα"
+
+#: includes/Admin/AdminDashboard.php:613
+msgid "LEI des Unternehmens"
+msgstr "LEI οντότητας"
+
+#: includes/Admin/AdminDashboard.php:617
+msgid "Name des Unternehmens"
+msgstr "Επωνυμία οντότητας"
+
+#: includes/Admin/AdminDashboard.php:628
+msgid ""
+"Alle Registerdaten und Einstellungen beim Deinstallieren des Plugins löschen"
+msgstr ""
+"Διαγραφή όλων των δεδομένων μητρώου και των ρυθμίσεων κατά την απεγκατάσταση "
+"του προσθέτου"
+
+#: includes/Admin/AdminDashboard.php:630
+msgid ""
+"Ohne Auswahl bleiben Dienstleister, Verträge und Unternehmenseinstellungen "
+"erhalten, wenn das Plugin gelöscht wird."
+msgstr ""
+"Χωρίς επιλογή, οι πάροχοι, οι συμβάσεις και οι ρυθμίσεις της οντότητας "
+"διατηρούνται όταν διαγραφεί το πρόσθετο."
+
+#: includes/Admin/AdminDashboard.php:640
+msgid "DORA"
+msgstr "DORA"
+
+#: includes/Admin/AdminDashboard.php:640
+msgid ""
+"Verordnung (EU) 2022/2554 über die digitale operationale Resilienz im "
+"Finanzsektor, anwendbar seit dem 17. Januar 2025. Sie gilt für die in "
+"Artikel 2 genannten Finanzunternehmen und für IKT-Drittdienstleister; dieses "
+"Plugin prüft nicht, ob sie für ein Unternehmen gilt."
+msgstr ""
+"Κανονισμός (ΕΕ) 2022/2554 σχετικά με την ψηφιακή επιχειρησιακή ανθεκτικότητα "
+"του χρηματοοικονομικού τομέα, εφαρμοστέος από τις 17 Ιανουαρίου 2025. Ισχύει "
+"για τις χρηματοοικονομικές οντότητες του άρθρου 2 και τους τρίτους παρόχους "
+"υπηρεσιών ΤΠΕ· το πρόσθετο δεν εξετάζει την υπαγωγή."
+
+#: includes/Admin/AdminDashboard.php:641
+msgid "Informationsregister (Art. 28 Abs. 3)"
+msgstr "Μητρώο πληροφοριών (άρθρο 28 παρ. 3)"
+
+#: includes/Admin/AdminDashboard.php:641
+msgid ""
+"Finanzunternehmen führen auf Einzel-, teilkonsolidierter und konsolidierter "
+"Ebene ein Register aller vertraglichen Vereinbarungen über IKT-"
+"Dienstleistungen, berichten mindestens jährlich über neue Vereinbarungen und "
+"stellen das vollständige Register auf Anfrage der Behörde zur Verfügung."
+msgstr ""
+"Οι χρηματοοικονομικές οντότητες τηρούν σε ατομικό, υποενοποιημένο και "
+"ενοποιημένο επίπεδο μητρώο όλων των συμβατικών ρυθμίσεων για υπηρεσίες ΤΠΕ, "
+"υποβάλλουν τουλάχιστον ετησίως στοιχεία για νέες ρυθμίσεις και διαθέτουν το "
+"πλήρες μητρώο στην αρχή κατόπιν αιτήματος."
+
+#: includes/Admin/AdminDashboard.php:642
+msgid "Kritische oder wichtige Funktion (Art. 3 Nr. 22)"
+msgstr "Κρίσιμη ή σημαντική λειτουργία (άρθρο 3 σημ. 22)"
+
+#: includes/Admin/AdminDashboard.php:642
+msgid ""
+"Eine Funktion, deren Störung die finanzielle Leistungsfähigkeit, die "
+"Solidität oder die Fortführung der Dienstleistungen eines Finanzunternehmens "
+"erheblich beeinträchtigen würde oder die Einhaltung seiner "
+"Zulassungsbedingungen und Pflichten. Die Punktzahl dieses Plugins ist eine "
+"eigene Heuristik, keine Vorgabe der Verordnung."
+msgstr ""
+"Λειτουργία της οποίας η διατάραξη θα έβλαπτε ουσιωδώς τις χρηματοοικονομικές "
+"επιδόσεις, τη φερεγγυότητα ή τη συνέχεια των υπηρεσιών μιας "
+"χρηματοοικονομικής οντότητας ή τη συμμόρφωση με τους όρους άδειας. Η "
+"βαθμολογία του προσθέτου αποτελεί δική του ευρετική μέθοδο, όχι απαίτηση του "
+"κανονισμού."
+
+#: includes/Admin/AdminDashboard.php:643
+msgid "Vorlagen (Durchführungsverordnung (EU) 2024/2956)"
+msgstr "Υποδείγματα (εκτελεστικός κανονισμός (ΕΕ) 2024/2956)"
+
+#: includes/Admin/AdminDashboard.php:643
+msgid ""
+"Standardvorlagen für das Register, beginnend mit B_01.01 (Unternehmen, das "
+"das Register führt); Dienstleister stehen in B_05.01, die Lieferkette in "
+"B_05.02. Dieses Plugin erzeugt diese Vorlagen nicht."
+msgstr ""
+"Τυποποιημένα υποδείγματα μητρώου αρχίζοντας από το B_01.01 (οντότητα που "
+"τηρεί το μητρώο)· οι πάροχοι βρίσκονται στο B_05.01 και η αλυσίδα εφοδιασμού "
+"στο B_05.02. Αυτό το πρόσθετο δεν παράγει τα εν λόγω υποδείγματα."
+
+#: includes/Admin/AdminDashboard.php:644
+msgid ""
+"Legal Entity Identifier nach ISO 17442: 20 Zeichen, die letzten beiden sind "
+"Prüfziffern. Öffentlich nachschlagbar bei der GLEIF."
+msgstr ""
+"Κωδικός αναγνώρισης νομικής οντότητας κατά ISO 17442: 20 χαρακτήρες, οι δύο "
+"τελευταίοι είναι ψηφία ελέγχου. Δημόσια αναζητήσιμος μέσω GLEIF."
+
+#: includes/Integrations/EcosystemBridge.php:37
+msgid "DORA IKT-Register Kennzahlen"
+msgstr "Δείκτες Μητρώου ΤΠΕ DORA"
+
+#: includes/Integrations/EcosystemBridge.php:51
+msgid "DORA IKT-Register Kennzahl"
+msgstr "Δείκτης Μητρώου ΤΠΕ DORA"
+
+#: includes/Integrations/EcosystemBridge.php:55
+msgid ""
+"Berechnete Kennzahl aus dem DORA-IKT-Register (suppliers, contracts, "
+"cif_contracts, subcontractors, orphan_contracts, competent_authority, "
+"health_status)."
+msgstr ""
+"Υπολογισμένος δείκτης από το Μητρώο ΤΠΕ DORA (suppliers, contracts, "
+"cif_contracts, subcontractors, orphan_contracts, competent_authority, "
+"health_status)."
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

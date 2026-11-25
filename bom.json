@@ -1,0 +1,35 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-18T21:49:56Z",
+    "component": {
+      "type": "application",
+      "name": "wm-dora-ict-register",
+      "version": "1.2.2",
+      "description": "List of ICT third-party service providers and contracts with validated LEI, a CIF marking and a CSV export of the plugin tables. Not the register templates of Implementing Regulation (EU) 2024/2956 and not an xBRL-CSV report.",
+      "supplier": {
+        "name": "Arnold Wender",
+        "url": [
+          "https://arnoldwender.com"
+        ]
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:wordpress/wm-dora-ict-register@1.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f8d88cad223eed576f0414ce4d94bce81796c613fd1fb14df545e8b79ba6c586"
+        }
+      ]
+    }
+  },
+  "components": []
+}
